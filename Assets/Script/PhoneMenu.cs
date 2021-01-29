@@ -39,27 +39,30 @@ public class PhoneMenu : MonoBehaviour
             Playercanmove.speed = 5;
         }
         else if(Input.GetKeyDown(KeyCode.X)) {
+            phone.SetActive(true);
             ActivePage = false;
             PageInfo.SetActive(false);
             PageNote.SetActive(false);
             PageSetting.SetActive(false);
         }
-
     }
 
     public void InfoOpen()
     {
         PageInfo.SetActive(true);
+        phone.SetActive(false);
         ActivePage = true;
     }
     public void NoteOpen()
     {
         PageNote.SetActive(true);
+        phone.SetActive(false);
         ActivePage = true;
     }
     public void SettingOpen()
     {
         PageSetting.SetActive(true);
+        phone.SetActive(false);
         ActivePage = true;
     }
 }
