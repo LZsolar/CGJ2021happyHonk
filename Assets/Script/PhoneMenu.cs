@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class PhoneMenu : MonoBehaviour
 {
-    public Player Playercanmove;
+    public Player PlayerScp;
     public GameObject phone,PageInfo,PageNote,PageSetting;
     public Button Info,Note,Setting;
-
+    public GameObject Nitem1;
     private bool ActivePhone,ActivePage;
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class PhoneMenu : MonoBehaviour
         {
             phone.SetActive(true);
             ActivePhone = true;
-            Playercanmove.speed = 0;
+            PlayerScp.speed = 0;
             Info.Select();
         }
 
@@ -36,7 +36,7 @@ public class PhoneMenu : MonoBehaviour
         {
             phone.SetActive(false);
             ActivePhone = false;
-            Playercanmove.speed = 5;
+            PlayerScp.speed = 5;
         }
         else if(Input.GetKeyDown(KeyCode.X)) {
             phone.SetActive(true);
@@ -44,6 +44,11 @@ public class PhoneMenu : MonoBehaviour
             PageInfo.SetActive(false);
             PageNote.SetActive(false);
             PageSetting.SetActive(false);
+        }
+
+
+        if (PlayerScp.Fitem1) {
+            Nitem1.SetActive(true);
         }
     }
 
