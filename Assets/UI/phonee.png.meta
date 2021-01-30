@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 5affae912c652c94abeaf3e588b2a217
+guid: a9d4b2aa6a69f004897ffd12df751b4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7775374125215633990
-    second: mainmenu_Sprite-0002_0
+      213: -5185121626335323832
+    second: phonee_4
   - first:
-      213: -548527177666878205
-    second: mainmenu_Sprite-0002_1
+      213: -8641852685898187856
+    second: phonee_5
   - first:
-      213: -7057764176712584336
-    second: mainmenu_Sprite-0002_2
+      213: 5859680258584644552
+    second: phonee_6
   - first:
-      213: 8330411273514780664
-    second: mainmenu_Sprite-0002_3
+      213: 6929248409390281172
+    second: phonee_7
+  - first:
+      213: -1048998738160572382
+    second: phonee_8
+  - first:
+      213: 4939840652587958329
+    second: phonee_9
+  - first:
+      213: 7935636918746123905
+    second: phonee_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,13 +108,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mainmenu_Sprite-0002_0
+      name: phonee_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 78
-        width: 300
-        height: 18
+        x: 104
+        y: 0
+        width: 92
+        height: 188
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -113,20 +122,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abd22c6cd62581490800000000000000
-      internalID: -7775374125215633990
+      spriteID: 84956115a5fba08b0800000000000000
+      internalID: -5185121626335323832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainmenu_Sprite-0002_1
+      name: phonee_5
       rect:
         serializedVersion: 2
-        x: 9
-        y: 56
-        width: 300
-        height: 18
+        x: 207
+        y: 109
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 305a489207d3368f0800000000000000
-      internalID: -548527177666878205
+      spriteID: 0bb78c7c4c8f11880800000000000000
+      internalID: -8641852685898187856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainmenu_Sprite-0002_2
+      name: phonee_6
       rect:
         serializedVersion: 2
-        x: 9
-        y: 36
-        width: 300
-        height: 18
+        x: 235
+        y: 109
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 073b19affd8cd0e90800000000000000
-      internalID: -7057764176712584336
+      spriteID: 8cb8e463624c15150800000000000000
+      internalID: 5859680258584644552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: mainmenu_Sprite-0002_3
+      name: phonee_7
       rect:
         serializedVersion: 2
-        x: 9
-        y: 16
-        width: 300
-        height: 18
+        x: 207
+        y: 81
+        width: 22
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +185,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f702c6bae09b9370800000000000000
-      internalID: 8330411273514780664
+      spriteID: 4d1f52237b2a92060800000000000000
+      internalID: 6929248409390281172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_8
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 81
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2282b1a94353171f0800000000000000
+      internalID: -1048998738160572382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_9
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 53
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9300a80b6e6dd8440800000000000000
+      internalID: 4939840652587958329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_10
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 53
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e86589bbb012e60800000000000000
+      internalID: 7935636918746123905
       vertices: []
       indices: 
       edges: []

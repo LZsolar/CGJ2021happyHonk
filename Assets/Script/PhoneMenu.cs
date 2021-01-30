@@ -27,9 +27,9 @@ public class PhoneMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.X) && !ActivePhone)
         {
             phone.SetActive(true);
+            Info.Select();
             ActivePhone = true;
             PlayerScp.speed = 0;
-            Info.Select();
         }
 
         else if (Input.GetKeyDown(KeyCode.X) && ActivePhone && !ActivePage)
