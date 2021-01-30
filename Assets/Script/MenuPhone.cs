@@ -8,6 +8,7 @@ public class MenuPhone : MonoBehaviour
     public GameObject phone,PageMain, PageInfo, PageNote, PageSetting;
     public Button Info, Note, Setting;
     private bool ActivePhone, ActivePage;
+    public CurrentPage pageNow;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class MenuPhone : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X) && !ActivePhone)
         {
+            Time.timeScale = 0f;
             phone.SetActive(true);
             PageMain.SetActive(true);
             Info.Select();
@@ -33,6 +35,7 @@ public class MenuPhone : MonoBehaviour
 
         else if (Input.GetKeyDown(KeyCode.X) && ActivePhone && !ActivePage)
         {
+            Time.timeScale = 1f;
             phone.SetActive(false);
             PageMain.SetActive(false);
             ActivePhone = false;
@@ -40,7 +43,7 @@ public class MenuPhone : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.X))
         {
             PageMain.SetActive(true);
-
+            pageNow = CurrentPage.Main;
             ActivePage = false;
             PageInfo.SetActive(false);
             PageNote.SetActive(false);
@@ -54,17 +57,28 @@ public class MenuPhone : MonoBehaviour
         PageMain.SetActive(false);
         PageInfo.SetActive(true);
         ActivePage = true;
+        pageNow = CurrentPage.Info;
     }
     public void NoteOpen()
     {
         PageMain.SetActive(false);
         PageNote.SetActive(true);
         ActivePage = true;
+        pageNow = CurrentPage.Item;
     }
     public void SettingOpen()
     {
         PageMain.SetActive(false);
         PageSetting.SetActive(true);
         ActivePage = true;
+        pageNow = CurrentPage.Setting;
     }
+}
+
+public enum CurrentPage
+{
+    Main,
+    Info,
+    Item,
+    Setting
 }

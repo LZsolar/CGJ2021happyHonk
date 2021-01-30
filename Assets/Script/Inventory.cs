@@ -5,6 +5,7 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public List<Item> itemInInventory;
+    public List<Collider2D> itemReference;
     public float sanityPoint = 100f;
     public float timeToDecrease;
     bool isCounting = false;
