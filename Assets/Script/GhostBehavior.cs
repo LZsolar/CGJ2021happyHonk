@@ -14,19 +14,20 @@ public class GhostBehavior : MonoBehaviour
     public GhostState stateNow = GhostState.Idle;
     public GhostState stateLast;
     public List<Transform> patrolLocation;
+    public float TimePatrol;
+    public float rangeSense;
     float idleTimer = 0f;
-    public int idxLast, idxNow;
+    int idxLast, idxNow;
 
     void Update()
     {
-        Debug.Log(aiPath.reachedDestination);
         if(stateNow == GhostState.Idle)
         {
             idleTimer += Time.deltaTime;
         }
         RaycastHit2D hit = Physics2D.Linecast(transform.position, playerPosition.position, obstacleMask);
         //see player
-        if(hit.transform.gameObject.layer == 9)
+        if(hit.transform.gameObject.layer == 9 && Vector3.Distance(transform.position, playerPosition.position) <= rangeSense)
         {
             //if not chase
             if(stateNow != GhostState.Chase)
@@ -52,7 +53,7 @@ public class GhostBehavior : MonoBehaviour
                 stateLast = stateNow;
                 stateNow = GhostState.SearchLastLocation;
             }
-            else if(stateNow == GhostState.Idle && idleTimer > 5f)
+            else if(stateNow == GhostState.Idle && idleTimer > TimePatrol)
             {
                 idxLast = idxNow;
                 while(idxNow == idxLast)
@@ -95,19 +96,16 @@ public class GhostBehavior : MonoBehaviour
         {
             aiPath.canMove = true;
             DollAnimation.SetBool("isChasing",true);
-            //destinationSetter.target = positionNow;
         }
         if(stateNow == GhostState.SearchLastLocation)
         {
             aiPath.canMove = true;
             DollAnimation.SetBool("isChasing",true);
-            //destinationSetter.target = positionNow;
         }
         if(stateNow == GhostState.Patrol)
         {
             aiPath.canMove = true;
             DollAnimation.SetBool("isChasing",true);
-            //destinationSetter.target = positionNow;
         }
     }
 }
