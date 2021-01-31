@@ -8,6 +8,7 @@ public class LookingThroughObjective : MonoBehaviour
 {
     public List<Item> objItem;
     public List<bool> checkFinished;
+    public int finishedCount = 0;
     private int currPage = 0;
     public GameObject tutorialPage, mainPage;
     public TextMeshProUGUI combineName, combineLoc, stateText;

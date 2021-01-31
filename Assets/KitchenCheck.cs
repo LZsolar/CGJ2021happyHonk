@@ -46,6 +46,7 @@ public class KitchenCheck : MonoBehaviour, IRoomCheck
                 finishedCheck = true;
                 itemToShow.SetActive(true);
                 checkObj.checkFinished[1] = true;
+                checkObj.finishedCount++;
             }
         }
     }

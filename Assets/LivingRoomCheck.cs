@@ -46,6 +46,7 @@ public class LivingRoomCheck : MonoBehaviour, IRoomCheck
                 finishedCheck = true;
                 itemToShow.SetActive(true);
                 checkObj.checkFinished[0] = true;
+                checkObj.finishedCount++;
             }
         }
     }
