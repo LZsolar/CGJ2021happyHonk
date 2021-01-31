@@ -12,15 +12,15 @@ public class EndingManage : MonoBehaviour
     public LookingThroughObjective objective;
     public Transform player, ghost;
     bool startEnding = false;
-   // public PlayableDirector end1,end2,end3;
+    public PlayableDirector end1,end2,end3;
     public GameObject e1, e2, e3;
 
     void Start()
     {
 
-      //  end1.Stop();
-     //   end2.Stop();
-      //  end3.Stop();
+        end1.Stop();
+        end2.Stop();
+        end3.Stop();
 
     }
 
@@ -36,11 +36,10 @@ public class EndingManage : MonoBehaviour
 
                 player.gameObject.SetActive(false);
                 ghost.gameObject.SetActive(false); e1.SetActive(true);
-              //  end1.Play();
+                end1.Play();
                 
                 Debug.Log("GOOD");
                 startEnding = true;
-                Time.timeScale = 0f;
                 StartCoroutine(waiting());
             }
             if (inventory.sanityPoint <= 0f)
@@ -49,18 +48,17 @@ public class EndingManage : MonoBehaviour
                 ghost.gameObject.SetActive(false);
 
                 e3.SetActive(true);
-              //  end3.Play();
+                end3.Play();
                 
                 Debug.Log("INSANE");
                 startEnding = true;
-                Time.timeScale = 0f;
                 StartCoroutine(waiting());
             }
             else if(Vector3.Distance(player.position, ghost.position) <= 0.5f)
             {
                 player.gameObject.SetActive(false);
                 ghost.gameObject.SetActive(false); e2.SetActive(true);
-              //  end2.Play();
+                end2.Play();
                 
                 ForceDeadEnd();
                
@@ -73,18 +71,18 @@ public class EndingManage : MonoBehaviour
         player.gameObject.SetActive(false);
         ghost.gameObject.SetActive(false);
         e2.SetActive(true);
-       // end2.Play();
+        end2.Play();
        
         Debug.Log("DEAD");
         startEnding = true;
-        Time.timeScale = 0f;
         StartCoroutine(waiting());
     }
 
 
     IEnumerator waiting()
     {
+      Debug.Log("OKAY");
         yield return new WaitForSeconds(8);
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }
