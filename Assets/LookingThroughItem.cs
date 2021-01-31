@@ -9,7 +9,7 @@ public class LookingThroughItem : MonoBehaviour
     public Transform playerPos;
     public MenuPhone phoneStuff;
     public Inventory inventory;
-    private int currPage = 0;
+    public int currPage = 0;
     public GameObject mainPage, instruction, description;
     public TextMeshProUGUI pickupName;
     public Image _renderer;
@@ -20,13 +20,12 @@ public class LookingThroughItem : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftArrow))
         {
             currPage--;
-            currPage = Mathf.Clamp(currPage, 0, inventory.itemInInventory.Count-1);
         }
         else if(Input.GetKeyDown(KeyCode.RightArrow))
         {
             currPage++;
-            currPage = Mathf.Clamp(currPage, 0, inventory.itemInInventory.Count-1);
         }
+        currPage = Mathf.Clamp(currPage, 0, inventory.itemInInventory.Count-1);
         if(currPage == 0)
         {
             leftStuff.SetActive(false);
@@ -40,6 +39,18 @@ public class LookingThroughItem : MonoBehaviour
         else
             rightStuff.SetActive(true);
         mainPage.SetActive(true);
+        if(Input.GetKeyDown(KeyCode.Z) && phoneStuff.pageNow == CurrentPage.Item && inventory.itemInInventory.Count > 0)
+        {
+            Item thisItem = inventory.itemInInventory[currPage];
+            Collider2D thisStuff = inventory.itemReference[currPage];
+            inventory.itemInInventory.RemoveAt(currPage);
+            inventory.itemReference.RemoveAt(currPage);
+            if(currPage >= inventory.itemInInventory.Count)
+            {
+                currPage--;
+            }
+            thisStuff.transform.position = playerPos.position;
+        }
         if(inventory.itemInInventory.Count > 0)
         {
             _renderer.gameObject.SetActive(true);
@@ -53,16 +64,10 @@ public class LookingThroughItem : MonoBehaviour
         {
             instruction.SetActive(false);
             description.SetActive(false);
+            leftStuff.SetActive(false);
+            rightStuff.SetActive(false);
             _renderer.gameObject.SetActive(false);
             pickupName.text = "";
-        }
-        if(Input.GetKeyDown(KeyCode.Z) && phoneStuff.pageNow == CurrentPage.Item)
-        {
-            Item thisItem = inventory.itemInInventory[currPage];
-            Collider2D thisStuff = inventory.itemReference[currPage];
-            inventory.itemInInventory.RemoveAt(currPage);
-            inventory.itemReference.RemoveAt(currPage);
-            thisStuff.transform.position = playerPos.position;
         }
     }
 }
