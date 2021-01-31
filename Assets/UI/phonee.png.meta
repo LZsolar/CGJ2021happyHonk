@@ -23,6 +23,24 @@ TextureImporter:
   - first:
       213: 7935636918746123905
     second: phonee_10
+  - first:
+      213: 4978242989700369605
+    second: phonee_0
+  - first:
+      213: -4468881822740062172
+    second: phonee_1
+  - first:
+      213: 769356145875870163
+    second: phonee_2
+  - first:
+      213: -2154596360877480460
+    second: phonee_3
+  - first:
+      213: -8084078777179895645
+    second: phonee_11
+  - first:
+      213: -3822730432750723180
+    second: phonee_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,7 +150,7 @@ TextureImporter:
       name: phonee_5
       rect:
         serializedVersion: 2
-        x: 207
+        x: 52
         y: 109
         width: 22
         height: 22
@@ -153,7 +171,7 @@ TextureImporter:
       name: phonee_6
       rect:
         serializedVersion: 2
-        x: 235
+        x: 216
         y: 109
         width: 22
         height: 22
@@ -174,7 +192,7 @@ TextureImporter:
       name: phonee_7
       rect:
         serializedVersion: 2
-        x: 207
+        x: 52
         y: 81
         width: 22
         height: 22
@@ -195,7 +213,7 @@ TextureImporter:
       name: phonee_8
       rect:
         serializedVersion: 2
-        x: 235
+        x: 216
         y: 81
         width: 22
         height: 22
@@ -216,7 +234,7 @@ TextureImporter:
       name: phonee_9
       rect:
         serializedVersion: 2
-        x: 207
+        x: 52
         y: 53
         width: 22
         height: 22
@@ -237,7 +255,7 @@ TextureImporter:
       name: phonee_10
       rect:
         serializedVersion: 2
-        x: 235
+        x: 216
         y: 53
         width: 22
         height: 22
@@ -250,6 +268,132 @@ TextureImporter:
       bones: []
       spriteID: 18e86589bbb012e60800000000000000
       internalID: 7935636918746123905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 137
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc4bae8f95461540800000000000000
+      internalID: 4978242989700369605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 137
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420e06cc8a75bf1c0800000000000000
+      internalID: -4468881822740062172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 137
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1e1b4a65d4daa00800000000000000
+      internalID: 769356145875870163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 137
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f56c8b76065912e0800000000000000
+      internalID: -2154596360877480460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_11
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 25
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a80be5fe259fcf80800000000000000
+      internalID: -8084078777179895645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: phonee_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 25
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f51d3dceee2fac0800000000000000
+      internalID: -3822730432750723180
       vertices: []
       indices: 
       edges: []
