@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     {
         pd = GetComponent<PlayableDirector>();
         stt.Select();
+        pd.Stop();
     }
 
     // Update is called once per frame
