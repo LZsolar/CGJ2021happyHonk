@@ -7,9 +7,10 @@ using TMPro;
 public class LookingThroughObjective : MonoBehaviour
 {
     public List<Item> objItem;
+    public List<bool> checkFinished;
     private int currPage = 0;
     public GameObject tutorialPage, mainPage;
-    public TextMeshProUGUI combineName, combineLoc;
+    public TextMeshProUGUI combineName, combineLoc, stateText;
     public Image _renderer;
     public GameObject leftStuff, rightStuff;
 
@@ -45,6 +46,10 @@ public class LookingThroughObjective : MonoBehaviour
             _renderer.sprite = thisItem.sprite;
             combineName.text = thisItem.objectName;
             combineLoc.text = thisItem.roomLocation;
+            if(!checkFinished[currPage-1])
+                stateText.text = "UNFINISHED";
+            else
+                stateText.text = "FINISHED";
         }
     }
 }

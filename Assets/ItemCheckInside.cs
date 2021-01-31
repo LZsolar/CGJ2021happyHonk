@@ -13,6 +13,11 @@ public class ItemCheckInside : MonoBehaviour
     {
         if(col.CompareTag("Check"))
         {
+            if(col.GetComponent<IRoomCheck>().isInside(data.itemInfo))
+            {
+                data.interactible = false;
+                data.transform.GetComponent<Collider2D>().enabled = false;
+            }
             col.GetComponent<IRoomCheck>().AddToCurrent(data.itemInfo);
         }
     }

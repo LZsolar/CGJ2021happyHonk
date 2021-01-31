@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ItemData : MonoBehaviour
 {
+    public bool interactible = true;
     public SpriteRenderer _renderer;
     public Item itemInfo;
 

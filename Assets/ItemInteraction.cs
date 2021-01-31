@@ -33,7 +33,7 @@ public class ItemInteraction : MonoBehaviour
     {
         if(col.transform.CompareTag("Item"))
         {
-            if(col.GetComponent<ItemData>().itemInfo.type == itemType.Pickable)
+            if(col.GetComponent<ItemData>().itemInfo.type == itemType.Pickable && col.transform.GetComponent<ItemData>().interactible)
             {
                 pickupText.text = "Press E to pick up\n" + col.transform.GetComponent<ItemData>().itemInfo.objectLongName;
                 thisItem = col;
