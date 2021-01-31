@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a9c5118082b2a040b0c579dbefde143, type: 3}
-  m_Name: Talisman
+  m_Name: Holy Water
   m_EditorClassIdentifier: 
-  objectName: Talisman
-  objectLongName: A holy talisman
-  sprite: {fileID: 21300000, guid: 9211b860fa33bcf4881052f6c6086803, type: 3}
+  objectName: Holy Water
+  objectLongName: The holy water
+  sprite: {fileID: 21300000, guid: 4a343a5061bda1845b23ff73204fc643, type: 3}
   type: 1
-  roomLocation: Small Bedroom
+  roomLocation: Kitchen

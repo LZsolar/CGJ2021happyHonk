@@ -12,19 +12,19 @@ public class GhostSpeed : MonoBehaviour
     {
         if(playerInventory.sanityPoint <= 100f && playerInventory.sanityPoint >= 80f)
         {
-            aiPath.maxSpeed = 2f;
+            aiPath.maxSpeed = 0.8f;
         }
         else if(playerInventory.sanityPoint <= 79f && playerInventory.sanityPoint >= 40f)
         {
-            aiPath.maxSpeed = 3f;
+            aiPath.maxSpeed = 1.2f;
         }
         else if(playerInventory.sanityPoint <= 39f && playerInventory.sanityPoint >= 10f)
         {
-            aiPath.maxSpeed = 4f;
+            aiPath.maxSpeed = 2f;
         }
         else if(playerInventory.sanityPoint <= 9f)
         {
-            aiPath.maxSpeed = 5f;
+            aiPath.maxSpeed = 4f;
         }
         
     }
