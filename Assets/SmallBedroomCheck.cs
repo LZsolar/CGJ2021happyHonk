@@ -47,6 +47,7 @@ public class SmallBedroomCheck : MonoBehaviour, IRoomCheck
                 finishedCheck = true;
                 itemToShow.SetActive(true);
                 checkObj.checkFinished[2] = true;
+                checkObj.finishedCount++;
             }
         }
     }
